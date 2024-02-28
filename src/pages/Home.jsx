@@ -6,10 +6,11 @@ import  Island  from '../models/Island'
 import  Sky  from '../models/Sky'
 import Bird from '../models/Bird'
 import Plane from '../models/Plane'
-import Helicopter from '../models/Helicopter'
 import HomeInfo from '../components/HomeInfo'
 import sakura from '../assets/sakura.mp3'
 import { soundon, soundoff } from '../assets/icons'
+// import Helicopter from '../models/Helicopter'
+
 
 function Home() {
 
@@ -43,8 +44,6 @@ function Home() {
 
     return [screenScale, screenPosition];
   }
-
-  
 
   const adjustPlane = () => {
     let screenScale, screenPosition;
@@ -104,10 +103,10 @@ function Home() {
                 position={planePosition}
                 scale={planeScale}
                 rotation={[0, 20, 0]}/>
-                <Helicopter
+                {/* <Helicopter
                    position={heliPosition}
                    scale = {heliScale}
-                   rotation={[0, 12, 0]}/>
+                   rotation={[0, 12, 0]}/> */}
           </Suspense>
       </Canvas>
       <div className='absolute bottom-2 left-2'>
